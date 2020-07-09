@@ -1,9 +1,6 @@
 <!DOCTYPE html>
-<title> Lavaproductions- purchase</title>
-<link rel="icon" href="https://cdn.discordapp.com/attachments/670064583058128907/711060343845158943/Untitled_7.png">
 <html>
 <head>
-
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
@@ -11,176 +8,89 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.navbar {
+.mobile-container {
+  max-width: 480px;
+  margin: auto;
+  background-color: #555;
+  height: 500px;
+  color: white;
+  border-radius: 10px;
+}
+
+.topnav {
   overflow: hidden;
   background-color: #333;
+  position: relative;
 }
 
-.navbar a {
-  float: left;
-  font-size: 16px;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-.dropdown {
-  float: left;
-  overflow: hidden;
-}
-
-.dropdown .dropbtn {
-  font-size: 16px;  
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
-}
-
-.navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: red;
-}
-
-.dropdown-content {
+.topnav #myLinks {
   display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  background: black;
+  display: block;
   position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+  right: 0;
+  top: 0;
 }
 
-.dropdown-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.dropdown-content a:hover {
+.topnav a:hover {
   background-color: #ddd;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-</style>
-</head>
-<body>
-
-<div class="navbar">
-  <a href="">Home</a>
-  <a href="conatact.html">Contact</a>
-  <body {
-  padding: 25px;
-  background-color: white;
   color: black;
-  font-size: 25px;
 }
 
-.dark-mode {
-  background-color: black;
+.active {
+  background-color: #4CAF50;
   color: white;
 }
 </style>
 </head>
 <body>
 
+<!-- Simulate a smartphone / tablet -->
+<div class="mobile-container">
 
+<!-- Top Navigation Menu -->
+<div class="topnav">
+  <a href="index.html" class="active">Lavaproductions</a>
+  <div id="myLinks">
+    <a href="Contact.html">Contact us</a>
+    <a href="premium.html">Buy Premium</a>
+    <a href="#about.html">About</a>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
 
-<button onclick="myFunction()">Toggle dark mode</button>
+<div style="padding-left:16px">
+  <h3>Welcome to Lavaproductions</h3>
+  <p>This website will teach you the basics of coing for a small price</p>
+  <p>Click on the three lines at the top to begin you jorney</p>
+</div>
+
+<!-- End smartphone / tablet look -->
+</div>
 
 <script>
 function myFunction() {
-   var element = document.body;
-   element.classList.toggle("dark-mode");
-}
-</script></a>
-  <div class="dropdown">
-    <button class="dropbtn">More
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="prices.html">Buy Lessons</a>
-      <a href="premium.html">Buy Premium</a>
-      <a href="#">Link 3</a>
-      
-    </div>
-  </div> 
-</div>
-<style>
-div {
-  border: 0x solid gray;
-  padding: 8px;
-}
-
-h1 {
-  text-align: center;
-  text-transform: uppercase;
-  color: #20639B;
-}
-sub {
-  text-align: center;
-  text-transform: uppercase;
-  color: #20639B;
-  text-indent: 50px;
-  text-align: justify;
-  letter-spacing: 3px;
-}
-
-p {
-  text-indent: 50px;
-  text-align: justify;
-  letter-spacing: 3px;
-}
-
-a {
-  text-decoration: none;
-  color: #008CBA;
-}
-</style>
-</head>
-<body>
-
-<div>
-  <h1>Welcome to Lavaproductions</h1>
-  <center>
-  
- <p>
- This website will help people learn how to code for verry cheap prices
- </p>
-</div>
-<style>
-body {
-  padding: 25px;
-  background-color: white;
-  color: black;
-  font-size: 25px;
-}
-
-.dark-mode {
-  background-color: black;
-  color: white;
-}
-</style>
-</head>
-<body>
-
-
-
-
-
-<script>
-function myFunction() {
-   var element = document.body;
-   element.classList.toggle("dark-mode");
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
 }
 </script>
+
 </body>
 </html>
