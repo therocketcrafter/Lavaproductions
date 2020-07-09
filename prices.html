@@ -75,8 +75,33 @@ body {
 <body>
 
 <div class="navbar">
-  <a href="index.html">Home</a>
+  <a href="">Home</a>
   <a href="conatact.html">Contact</a>
+  <body {
+  padding: 25px;
+  background-color: white;
+  color: black;
+  font-size: 25px;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+
+
+<button onclick="myFunction()">Toggle dark mode</button>
+
+<script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script></a>
   <div class="dropdown">
     <button class="dropbtn">More
       <i class="fa fa-caret-down"></i>
@@ -85,6 +110,7 @@ body {
       <a href="prices.html">Buy Lessons</a>
       <a href="premium.html">Buy Premium</a>
       <a href="#">Link 3</a>
+      
     </div>
   </div> 
 </div>
@@ -144,5 +170,32 @@ a {
   *premium users get a 10% discount*
   </p>
 </div>
+<style>
+body {
+  padding: 25px;
+  background-color: white;
+  color: black;
+  font-size: 25px;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+
+
+
+
+<script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
 </body>
 </html>
+
